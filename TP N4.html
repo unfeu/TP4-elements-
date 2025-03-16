@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nouveaux éléments HTML5 d’organisation des contenus</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Verdana, sans-serif;
+            color: #c5a555;
+            line-height: 1.6;
+            background-color: #cbe2fb;
+        }
+
+        header.main-header {
+            background-color: #3858b2;
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        span.element-name {
+            display: inline-block;
+            padding: 2px 8px;
+            background-color: #78ccf3;
+            color: white;
+            font-weight: bold;
+            font-size: 0.8em;
+        }
+
+        nav {
+            background: #c5a555;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .conteneur {
+            max-width: 100%;
+            margin: 0px;
+        }
+
+        .contenu-principal {
+            width: 68%;
+            display: inline-block;
+            vertical-align: top;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            font-size: 16px;
+            margin-right: 1%; 
+        }
+
+        aside {
+            width: 30%;
+            display: inline-block;
+            vertical-align: top;
+            background: #71b5e7;
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 16px;
+            color: #ffffff;
+        }
+
+        section {
+            border: 1px solid #ddd;
+            margin-bottom: 15px;
+            padding: 10px;
+        }
+
+        section header {
+            background-color: #c5a555;
+            color: white;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        section footer {
+            background-color: #88b4e7;
+            color: white;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        article {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background: #fff;
+        }
+
+        footer {
+            background: #3858b2;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="conteneur">
+        <header class="main-header">
+            <b>Nouveaux éléments HTML5 d’organisation des contenus</b>
+        </header>
+        
+        <nav>
+            <a href="#">Accueil</a> | <a href="#">À propos</a> | <a href="#">Contact</a>
+        </nav>
+        
+        <div class="contenu-wrapper">
+            <section class="contenu-principal">
+                <header>
+                    <h1>Organisation des contenus HTML5</h1>
+                </header>
+                <article>
+                    <h2><span class="element-name">header</span> - En-tête</h2>
+                    <p>Cet élément permet d’annoncer (titre, slogan, logo) ce que contient la page (ou un article, une section). Il peut également contenir des liens de navigation, un sommaire, un formulaire de recherche.</p>
+                </article>
+                <article>
+                    <h2><span class="element-name">nav</span> - Éléments de navigation</h2>
+                    <p>L’élément <b>nav</b> contient les éléments de navigation du site (barre de navigation horizontale ou en menu latéral).</p>
+                </article>
+                <article>
+                    <h2><span class="element-name">article</span> - Portion de document</h2>
+                    <p>La balise <b>article</b> délimite une portion du document. Ce peut être un message de forum, un article de presse, un billet de blog ou toute autre portion de contenu indépendant. Un article imbriqué dans un autre désignera une citation.</p>
+                </article>
+                <article>
+                    <h2><span class="element-name">section</span> - Subdivision de contenu</h2>
+                    <p>Une <b>section</b> permet de subdiviser le contenu d’un document (paragraphes, blocs thématiques). Elle peut elle-même se subdiviser en plusieurs sections et être constituée d’un en-tête, d’un pied, et d’une navigation…</p>
+                </article>
+                <article>
+                    <h2><span class="element-name">aside</span> - Élément contextuel</h2>
+                    <p>Cette balise contient les contenus contextuels, c’est-à-dire en relation thématique avec ce qui l’entoure (liens « sur le même thème », encadré dans un article).</p>
+                </article>
+                <article>
+                    <h2><span class="element-name">footer</span> - Pieds de page</h2>
+                    <p>Cet élément contient les informations de « pied de page » : auteur, droits de reproduction, etc. de la section à laquelle il est appliqué.</p>
+                </article>
+                <footer>
+                    <p>HTML5 dispose d'éléments bien pensés pour un meilleur balisage sémantique de l'information. Le plus difficile n'est pas d'écrire ces nouvelles balises, mais bien de comprendre leur usage.</p>
+                </footer>
+            </section>
+            <aside>
+                <h3>Liste récapitulative des éléments de section HTML5</h3>
+                <ul>
+                    <li>section</li>
+                    <li>article</li>
+                    <li>nav</li>
+                    <li>aside</li>
+                    <li>header</li>
+                    <li>footer</li>
+                </ul>
+            </aside>
+        </div>
+        
+        <footer>
+            <p>Université de Strasbourg, 2025</p>
+        </footer>
+    </div>
+</body>
+</html>
